@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+* {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.background {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.box {
+  font-size: calc(5px + 2vmin);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px;
+  background-color: #5d6a8f;
+  outline: 5px solid black;
+
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+option {
+  padding: 10px;
+}
+
+#higher {
+  color:rgb(121, 194, 121);
+  font-weight: bolder;
+}
+
+#lower {
+  color: rgb(223, 146, 146);
+  font-weight:bold;
+}
+
+#equal {
+  color: white;
+}
+
+#playerInput {
+  width: 300px;       
+  padding: 10px;      
+  border-radius: 5px; 
+  border: 2px solid #ccc; 
+  font-size: 20px;    
+  outline: none;
+}
+
+#seasonInput {      
+  padding: 10px;      
+  border-radius: 5px; 
+  border: 2px solid #ccc; 
+  font-size: 20px;    
+  outline: none;
+}
+
+#playerInput:focus {
+  border-color: #1c436d; /* Add a color for focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow on focus */
+}
+
+datalist {
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
